@@ -1,0 +1,346 @@
+<!doctype html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sarvahitey - Vidya Vistar</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS-->
+    <link href="css/one-page-base.css" rel="stylesheet">
+    <link href="css/act.css" rel="stylesheet">    
+    <!-- Plugins & Assets-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hover-effects.css" />
+    <link rel="stylesheet" href="plugins/prettyPhoto_uncompressed_3.1.5/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="plugins/bootstrap-datetimepicker-master/build/css/bootstrap-datetimepicker.css">  
+    <link rel="stylesheet" href="plugins/Animated-Circle-Statistics-Plugin-With-jQuery-Canvas-Circliful/css/jquery.circliful.css" type="text/css" />
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">  
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Adaptive-Images JS // this has to go here -->
+    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+    
+	</head>
+	<body class="subpage">
+    
+    <!-- preloader -->
+    <div id="preloader-wrapper">
+        <div class="preloader"></div>
+    </div><!-- / preloader -->
+        
+    	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background: black;">
+          <div class="container-wide">
+                  <div class="navbar-header">
+                     <ul class="list-unstyled list-inline pull-right">
+                          <li>
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                                  <i class="fa fa-bars" style="font-size: 30px; padding-right: 10px"></i>
+                              </button>     
+                          </li>     
+                      </ul>         
+                      <a id="logo" class="navbar-brand-home navbar-brand" href="#home"><img src="img/logo.png" alt="logo"></a>
+
+                  </div>
+  
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                  <ul class="nav navbar-nav">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                          <li class="first"><a href="#home" class="hidden-li"></a></li>
+              
+                          <li class="page-scroll toggle-responsive">
+                              <a href="index.html#home">Home</a>
+                          </li>
+                          <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li class="toggle-responsive"><a href="aboutus.html">Vision</a></li>
+                            <li class="toggle-responsive"><a href="team.html">Founding Team</a></li>
+                            <!--<li><a href="donors.html">Members</a></li>-->
+                          </ul>
+                        </li>
+                        <li class="page-scroll">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li class="toggle-responsive"><a href="sample-campaign - vidya.html">Vidya Vistar</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - vocational.html">Vocational Training</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - safai.html">Safai Abhiyaan</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - clothes.html">Clothes Donation</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - model.html">Model Village</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - himachal.html">Project Himachal</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - onetime.html">Ad hoc Projects</a></li>
+                          </ul>
+                        </li>
+                          <li class="page-scroll toggle-responsive">
+                              <a href="index.html#events">Events</a>
+                          </li>
+              
+              <li class="page-scroll toggle-responsive">
+                              <a href="index.html#gallery">Gallery</a>
+                          </li>
+              
+                          <li class="page-scroll toggle-responsive">
+                              <a href="index.html#join">Get Involved</a>
+                          </li>
+
+                          <li class="page-scroll toggle-responsive">
+                              <a href="index.html#contact">Contact</a>
+                          </li>
+						  <li class="page-scroll toggle-responsive">
+                              <a href="index.html#donation" class="hidden-don" data-toggle="modal" type="button" >Donate</a>
+                          </li>
+
+
+                          </ul>
+                          </div>
+          </div>
+      </nav>
+        
+         
+		 <!--- Sample Donation Pop Up modal -->
+			
+			<div  id="donation" class="modal fade" >
+                <div class="modal-dialog modal-lg" ">
+                  <div class="modal-content" >
+                     <!--  <div class="modal-body modal-body-margin-top">
+   					  map -->
+                     
+                      <h4   class="donation-pop" style="text-align: center; border-radius: 4px 4px 0px 0px;">Donate for our cause</h4>
+					  <h3 style="text-align: center;">You can send us through</h3>
+                      <p style="text-align: center;"> Account number :<a href="tel:103705000397" style="color: black;"> 103705000397 </a>
+						<br>IFSC : ICIC0001037
+						<br>Branch : Vasant Kunj
+					<br>	Account name : Sarvahitey
+						<br>Bank : ICICI
+						<br>Our Paytm number: <a href="tel:+918800577497" style="color: black;"> +918800577497 </a>
+						</p>     
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div>
+			
+			
+			
+			<!--Donation modal end -->
+         <!--=== INTRO ===-->
+         <section class="hero bg-brand-primary">
+            <div class="col-lg-12 inner-container animated-longer-delay-4 fadeInDown text-center no-subtitle">
+				<h1>Vidya Vistar</h1> 
+				<h3>“Intellectual growth should commence at birth and cease only at death.”</h3>
+                <h4>–Albert Einstein</h4>
+          	</div><div class="clearfix"></div>
+         </section><!--=== / END intro  ===-->
+       
+         <!--=== Social Share Bar ===-->
+         <div id="social-share-bar" class="bg-brand-primary-darker">
+            <div class="col-lg-12 animated-longer-delay-5 fadeInDown text-center">
+                 <div class="social-share-bar">
+                      <ul class="list-inline list-social">
+                        <!--<li><a href="javascript:void(0)"><i class="fa fa-envelope-square"></i> <small class="list-social-text">email</small></a></li>-->
+                        <!--<li><a href="javascript:void(0)"><i class="fa fa-twitter-square"></i> <small class="list-social-text">tweet</small></a></li>-->
+                        <li><a href="https://www.facebook.com/media/set/?set=a.533773313439234.1073741860.424789574337609&type=3" target="blank"><i class="fa fa-facebook-square"></i> <small class="list-social-text">post</small></a></li>
+                        <!--<li><a href="javascript:void(0)"><i class="fa fa-pinterest-square"></i> <small class="list-social-text">pin</small></a></li>-->
+                        <!--<li><a href="javascript:void(0)"><i class="fa fa-google-plus-square"></i><small class="list-social-text"> share</small></a></li>-->
+                    </ul>
+                  </div>
+            </div>             
+            <div class="clearfix"></div>
+         </div><!--=== / END social share bar ===-->
+         
+        <!--=== CAMPAIGN SUMMARY AND DONATION ===-->
+        <section id="campaign-summary">
+        	<div id="sample-vidya-image" class="animated-longer-delay-5 fadeIn"></div>
+        </section><!--=== / END campaign summary  ===-->
+      
+       <!--=== CAMPAIGN DETAILS ===-->
+       <section id="campaign-details" class="bg-white">
+			<div class="inner-container overlay-light">
+            	<!-- section header -->
+                 <div class="row text-center">
+                    <div class="wow animated-longer-delay-1 fadeInDown">
+                    	<!--<h1>Project Details</h1>
+                        <div class="accent-rule-short"></div>
+                    	<h2>Vidya Vistar is teaching students in various schools</h2>-->
+                    </div>
+                </div><!-- / end section header -->
+                <div class="row row-of-columns">
+                	<div class="wow animated-longer-delay-2 fadeIn">			
+                           <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                  <li class="active large"><a href="#campaign-delhi" role="tab" data-toggle="tab">Vidya Vistar Delhi, Gole Market</a></li>
+                                  <li class="large"><a href="#campaign-gurgaon" role="tab" data-toggle="tab">Vidya Vistar Gurugram</a></li>
+                                  <li class="large"><a href="#campaign-noida33" role="tab" data-toggle="tab">Vidya Vistar Noida, Sector 33</a></li>
+                                  <li class="large"><a href="#campaign-noida51" role="tab" data-toggle="tab">Vidya Vistar Noida, Sector 51</a></li>
+                                  <li class="large"><a href="#campaign-noida126" role="tab" data-toggle="tab">Vidya Vistar Noida, Sector 126</a></li>
+                                </ul>
+      						  <!-- Tab panes -->
+                                <div class="tab-content bg-white">
+                                      <!-- tab pane 1 -->
+                                      <div class="tab-pane active" id="campaign-delhi">
+                                      <div class="clearfix"></div>   
+                                            <br><div class="col-lg-12">
+                                                <h3><b></b></h3>
+                                                <p></p>We discovered Vidya Vistar through a volunteer who used to visit a particular slum establishment at Peshwa Road, Gole Market and help the kids there have a bigger dream for their future. As we visited the slum, met the kids, met the parents, we discovered an opportunity to serve the not-so-lucky fellows there to remove the disparity between them and our luckier brothers.
+                                                <p></p>
+Since then, it has been an uphill journey for us, and a fulfilling journey for them. Volunteers from our Delhi Chapter go there each Saturday and Sunday, both morning and evening, and teach kids residing in the entire slum with much enthusiasm. The kids there complement us by perseverant attendance and motivated attitude towards learning. 
+<p></p>
+The volunteers motivate the kids and their parents on Saturdays through events, extra-curricular activities, alternative methods of education and oration, while the young adults are given remedial lessons and have doubt clearing classes. On Sundays, however, the kids are taught, in distinct batches, their syllabus and curriculum, in the mornings and Maths, English and Hindi basics in the evening. These two Sunday sessions make up for the overall development of the kid, as remedial and preparatory education. With the support of our volunteers and the revered citizens and our patrons, we’re hoping to start regular classes on the weekdays as well.
+<p></p>
+The best part of this project is, however, the compliments and praises and blessings that we receive from the parents when we go there. The pats on our backs and the ‘thank you’s make up for the exhaustion of the previous week and gets us ready for the week to come. We see a lot of future in the kids that we teach every weekend, if you do too, do come and witness us witness happy futures.
+<p></p>
+                     <p>
+                     <br><b>Timing:</b> - Saturdays 3-5 pm, Sundays 11 am -1 noon and 3-5 pm</p>
+                                            </div>              
+                                      </div><!-- / end tab pane 1 -->
+                                      
+                                      <!-- tab pane 2 -->
+                                   <div id="campaign-gurgaon" class="tab-pane" >
+                    <p><p>
+                                        <h3><b></b></h3>
+                     <p>
+One of Sarvahitey’s members, who stays in Sector 52, Gurugram, Haryana, had a keen eye for opportunities that could be availed in the social service sector, and therefore, on identifying a slum settlement near Sector 52, Gurugram, wherein he found numerous homes of refugees from Bangladesh, he sought to avail that opportunity and extend his generous hand towards them.
+<p></p>
+Thereafter, the core team of Sarvahitey took cognizance of the slum, and went there to ascertain the opportunities that lay in front of it, for progressing the settlement in the manner that the rest of the slums and underprivileged (that we cater to) were being helped. The members spoke to the residents of the slum settlement and found that they were overly eager to send their kids to any place that could afford the children an opportunity for growing intellectually.
+<p></p>
+Sarvahitey, thereafter, gave a shoutout to the residents of Gurugram and neighbouring areas, to ascertain whether there were enough volunteers to go ahead with the project. As expected, friends and acquaintances grabbed the opportunity to serve and several new members were added to its already steadily growing team.
+<p></p>
+Since then, our members, both, existing, and new, have been teaching the children of the Bangladeshi refugees each Saturday and Sunday, and much to their delight, and ours, the project has been spearheaded with great success. The most surprising part is that the language gap between the teachers and the taught, hasn’t hindered the effectiveness of the classes and batches at this particular slum settlement at Gurugram. </p>
+
+                     <p>
+                     <b>Venue: </b> Sector 56, Gurugram
+                     <br><b>Timing:</b> Saturdays 3-5 pm, Sundays 3-5 pm</p>
+                     
+                  <!--<div class="col-md-2 col-sm-3 col-xs-12  make-a-donation  animated-longer-delay-10 fadeIn">
+                          <div class="vert-centered-wrapper-120px"><!-- height set in one-page-base.css -->
+                               <!--<div class="vert-centered">  
+                                  <a href="index.html#join" class="btn btn-primary btn-lg btn-rounded-edge btn-extra-padding">Volunteer</a>
+                               </div>
+                          </div>
+                      </div>-->
+                                      </div><!-- / end tab pane 2 -->
+                                      
+                                      <!-- tab pane 3 -->
+                                      <div class="tab-pane" id="campaign-noida33">
+                                      <div class="clearfix"></div>   
+                                            <br><div class="col-lg-12">
+                                                <h3></h3>
+                                                <p>
+Vidya Vistar, Noida sector 33 was Sarvahitey's first educational project, which was under taken almost along with the birth of the NGO. Vidya Vistar, Noida sector 33 was an initiative, wherein Brahmacharis of Arya Samaj Gurukul, located in Sector 33, Noida, were made aware of all the developments of the world, which they were otherwise unaware of. The children there are students who live miles away from their homes, in a traditional hostel, in a campus where primary focus is assigned to Sanskrit language, and the ideals of the Arya Samaj. Even the students affectionately attach to themselves a title of 'Arya'. Under this project, classes were organized on a weekly basis, wherein volunteers of Sarvahitey took 5 hour long sessions with the Brahamacharis, and tried to fill the voids in the knowledge base of the kids, by focusing on current affairs all around the world, and course material of their classes for enhancement of their academic education, and by solving their personal and typical queries regarding various topics. The main objective of this initiative was to improve the resource capacity of the students who studied there, while also uplifting their personality traits, which obviously matured when given more exposure. The students studying there come from humble backgrounds, yet, with their profound support and dedication, coupled with regularity and perseverance of the volunteers, over months, Sarvahitey saw a marginal difference in their approach to education as such. We also saw an acute growth in the level of their dreams, which were fortunately becoming bigger day by day; with the constant support of donors and volunteers, we sought to bridge the gaps between their dreams and material reality. 
+<p></p>
+Anyone is welcome to visit this Gurukul, which to our amazement and belief, is the only school where the enthusiasm of students to learn is more than the willingness of teachers to teach. The volunteers have, ever since the initiation of this project, been surprised by the response and responsiveness of the students of the Arya Samaj Gurukul. A teacher cannot ask for more. 
+<p></p>
+Due to the continued perseverance and dedicated efforts, the volunteers and members of Sarvahitey managed to bring about drastic change in the infrastructure and academics of Vidya Vistar, Noida sector 33, which later saw the appointment of more number of regular teachers, and therefore, the culmination and success of the project that was taken up at such a nascent stage of the NGO. Sarvahitey has been in regular touch with its former students, and keep track of their progresses. We're amazed, to say in the least. 
+</p>
+
+                                            </div>              
+                                      </div><!-- / end tab pane 3 -->
+
+                                      <!-- tab pane 4 -->
+                                      <div class="tab-pane" id="campaign-noida51">
+                                      <div class="clearfix"></div>   
+                                            <br><div class="col-lg-12">
+                                                <h3><b></b></h3>
+                                                <p>The initiative was undertaken with a motive to teach the children living in "Hoshiyarpur", a village neighboring Noida. The drive behind this project was the eradication of dilapidated social, financial and most importantly, educational condition prevalent in the village. Starting with the kids of the village, the project has been gradually trying to target the uneducated adults, and the volunteers are trying to educationally and culturally uplift the parents of the kids who come to F-56, Sector 51, Noida. 
+                             <p></p>                
+Since the initiation of Vidya Vistar, the number of classes for this project have increased to 4 days, i.e. Tuesdays, Thursdays, Saturdays and Sundays. While on the weekdays and Saturdays the core subjects are taught, including Maths, English, Science and Hindi, on Sundays the volunteers hold recreational and alternative education classes, like motivation through movies like Malgudi Days, quizzes and art and craft classes.
+<p></p>
+In the kids that come for Vidya Vistar, we got ourselves an empty canvas of minds, which required immense grooming, but with the constant support and zeal of the volunteers, that keep increasing in number on a weekly basis, we have been fortunate enough to instill some qualities in the kids. The rowdy, unruly kids that once refused to sit down at a place for more than 5 minutes now come regularly with much enthusiasm to be taught and garnered. 
+<p></p>
+With the newly renovated place to study, we hope for better attendance and a wider scope of target for the NGO. In the times to come, we have planned for enrolment of the kids in nearby schools for their overall development and a school education, without which it is highly difficult for the kids, in whom we see immense potential, to achieve the dreams that they’re building for themselves. We wish, with the help of our promoters and supported, to have an all-inclusive project, targeting people from all walks of life, who were unlucky enough not to be as privileged as us. 
+</p>
+                     <p>
+                     <br><b>Timing:</b>Tuesdays 4-5:30 pm, Thursdays 4-5:30 pm, Saturdays 4-5:30 pm, Sundays 4-5:30 pm</p>
+
+                                            </div>              
+                                      </div><!-- / end tab pane 4 -->
+
+                                      <!-- tab pane 5 -->
+                                      <div class="tab-pane" id="campaign-noida126">
+                                      <div class="clearfix"></div>   
+                                            <br><div class="col-lg-12">
+                                                <h3><b></b></h3>
+                                                <p>Sarvahitey started with a lot of members who were then students of Amity Law School, Delhi, and, presently comprises of numerous members who are currently still studying there, pursuing their legal education. These members saw the need for education among the children around Amity University, Sector 125, Noida, where such children roamed around the entire day, loitering aimlessly.
+<p></p>
+Taking note of the situation and planning to set up a new project around Amity University, the members of Sarvahitey set up classes at the temple in the vicinity of the University, forming and executing a tie-up with Government Middle School, Village Raipur which is located in Sector 126, Noida.
+<p></p>
+The aim of this project was to establish a curricular as well as an extra-curricular set-up so as to provide education to children, both school going, as well as non-school going, around the alma mater of the members of Amity University.
+<p></p>
+Thereafter, and since, extra classes have been provided to children from 3-4:30 p.m. on Mondays, Wednesdays and Fridays, in such a manner that the members of Sarvahitey first complete their classes at the University, and then provide education to the needy. Classes pertaining to general awareness are also held, which are taught through interactive and non-traditional methods, which is the best medium to engage both members and the children in a progressive mode of education.
+</p>
+                     <p>
+                     <b>Venue: </b> Sector 125, Noida
+                     <br><b>Timing:</b> Mondays 3-4:30 pm, Wednesdays 3-4:30 pm, Fridays 3-4:30 pm</p>
+
+                                            </div>              
+                                      </div><!-- / end tab pane 5 -->
+
+
+                                      <div class="clearfix"></div>
+                                </div> <!-- / end tabs -->
+                                <br>
+                                </div><!-- /end panel footer -->
+                            </div><!-- /end panel  -->
+                    	</div>
+                    </div>
+                </div><!-- / end col 2 -->
+           <div class="clearfix"></div>
+       </section><!--=== / END campaign details   ===-->
+      
+      <!--=== FOOTER ===-->
+
+			 <!-- Row 2 -->
+              <div class="row footer-bottom">
+                  <div class="inner-container-small wow animated fadeIn">
+                      <div class="col-lg-3 col-sm-12 left"><p><small class="transparent-50">© 2015 sarvahitey. All Rights Reserved.</small></p></div>
+                      <div class="col-lg-3 col-sm-12 pull-right">
+                           <div class="list-social transparent-50 pull-right">
+                                <ul class="list-inline">
+                                    <li><a href="javascript:void(0)"><i class="fa fa-facebook transparent"></i></a></li>
+                                    <!--<li><a href="javascript:void(0)"><i class="fa fa-twitter transparent"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-dribbble transparent"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-tumblr transparent"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-flickr transparent"></i></a></li>-->
+                                </ul>
+                            </div>
+                      </div>
+                  </div>
+              </div><!-- / end Row 2 -->
+        </section><!--=== END Footer ===-->       
+   
+        <!-- Core JavaScript Files -->
+		<script src="js/jquery-1.11.0.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="dist/js/bootstrap.min.js"></script>
+	    <!-- Plugins -->
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="js/modernizr.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+		<script src="plugins/WOW-master/dist/wow.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+		<script src="plugins/prettyPhoto_uncompressed_3.1.5/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="plugins/tinyscrollbar-master/lib/jquery.tinyscrollbar.js"></script>
+        <script type="text/javascript" src="plugins/jquery-countTo-master/jquery.countTo.js"></script>
+        <!-- these next three are for the date picker in the the 'schedule an event' modal window -->
+		<script type="text/javascript" src="js/moment.js"></script>
+		<script src="plugins/bootstrap-datetimepicker-master/src/js/locales/bootstrap-datetimepicker.en-au.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/bootstrap-datetimepicker-master/src/js/bootstrap-datetimepicker.js" type="text/javascript" charset="utf-8"></script>
+	    <!-- Custom Theme JavaScript -->
+        <script src="js/act.js"></script>
+
+	
+
+	
+	</body>
+</html>

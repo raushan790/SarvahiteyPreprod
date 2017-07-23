@@ -1,0 +1,869 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sarvahitey - Working as one for the good of all - Home</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">    
+    <!-- Theme CSS --> 
+    <link href="css/one-page-base.css" rel="stylesheet">
+    <link href="css/act.css" rel="stylesheet">    
+    <!-- Plugins & Assets-->
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hover-effects.css" />
+    <link rel="stylesheet" href="plugins/prettyPhoto_uncompressed_3.1.5/css/prettyPhoto.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" media="screen" href="plugins/bootstrap-datetimepicker-master/build/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="plugins/tinyscrollbar-master/examples/simple/tinyscrollbar.css" type="text/css" media="screen"/>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("user_uJzVrd8TufKl8Qsz1EHnE");
+     })();
+  </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- adaptive-images.php this script must go here -->
+    <script type="text/javascript">
+            function submitContactForm(){
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var subject = $('#subject').val();
+                var message = $('#comments').val();
+                emailjs.send("website","sarvahitey",{from_name: name, from_email: email, subject: subject, message:message})
+                .then(function(response) {
+                   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+                }, function(err) {
+                   console.log("FAILED. error=", err);
+                });
+            }
+ 	</script>
+    
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- preloader -->
+    <div id="preloader-wrapper">
+        <div class="preloader">
+        </div>
+    </div><!-- / preloader -->
+        
+    	
+    <!--=== NAVIGATION ===-->  
+	
+      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background: black;">
+          <div class="container-wide">
+                  <div class="navbar-header">
+                     <ul class="list-unstyled list-inline pull-right">
+                          <li>
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                                  <i class="fa fa-bars" style="font-size: 30px; padding-right: 10px"></i>
+                              </button>     
+                          </li>     
+                      </ul>         
+                      <a id="logo" class="navbar-brand-home navbar-brand" href="#home"><img src="img/logo.png" alt="logo"></a>
+
+                  </div>
+  
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                  <ul class="nav navbar-nav">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                          <li class="first"><a href="#home" class="hidden-li"></a></li>
+						  
+                          <li class="page-scroll toggle-responsive">
+                              <a href="#home">Home</a>
+                          </li>
+                          <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li class="toggle-responsive"><a href="aboutus.html">Vision</a></li>
+                            <li class="toggle-responsive"><a href="team.html">Founding Team</a></li>
+                            <!--<li><a href="donors.html">Members</a></li>-->
+                          </ul>
+                        </li>
+                        <li class="page-scroll">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li class="toggle-responsive"><a href="sample-campaign - vidya.html">Vidya Vistar</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - vocational.html">Vocational Training</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - safai.html">Safai Abhyaan</a></li>
+                            <li><a href="sample-campaign - clothes.html">Clothes Donation</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - model.html">Model Village</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - himachal.html">Project Himachal</a></li>
+                            <li class="toggle-responsive"><a href="sample-campaign - onetime.html">Ad hoc Projects</a></li>
+                          </ul>
+                        </li>
+                          <li class="page-scroll toggle-responsive">
+                              <a href="#events">Events</a>
+                          </li>
+						  
+						  <li class="page-scroll toggle-responsive">
+                              <a href="#gallery">Gallery</a>
+                          </li>
+						  
+                          <li class="page-scroll toggle-responsive">
+                              <a href="#join">Get Involved</a>
+                          </li>
+						  
+						
+						
+						
+						  <!--<li class="page-scroll">
+                              <a href="#calendar">Our Calendar</a>
+                          </li>-->
+                          <li class="page-scroll toggle-responsive">
+                              <a href="#contact">Contact</a>
+                          </li>
+						  <li class="page-scroll toggle-responsive">
+                              <a href="#donation" class="hidden-don" data-toggle="modal" role="button">Donate</a>
+                          </li>
+						<!--
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="donors.html">Donors</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="calendar.html">Calendar</a></li>
+                          </ul>
+                        </li>
+						
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="blog-home.html">Blog Classic</a></li>
+                            <li><a href="blog-isotope.html">Blog Isotope</a></li>
+                            <li><a href="blog-hero.html">Blog Hero Unit</a></li>
+                            <li><a href="blog-post.html">Blog Post</a></li>
+                            <li><a href="blog-author.html">About the Author</a></li>
+                          </ul>
+                        </li>-->
+<!--
+                  </ul>
+                   <!-- navbar donation button -->
+<!--
+                   <div id="donate-homepage" class="donate bg-brand-tertiary pull-right">
+                          <a  href="#donateModal" data-toggle="modal" role="button">Donate</a>
+                  </div>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container -->
+      </nav><!--=== END Navigation ===-->  
+  
+      <!--=== INTRO ===-->
+      <section id="">
+      <header id="home" class="intro">
+          <div class="overlay-dark">
+              <div class="intro-body">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <!-- carousel container-->
+                              <div class="carousel-wrapper">
+                                      <!-- carousel -->
+                                          <div class="carousel slide carousel-fade">
+                                            <div class="carousel-inner">   
+                                                 <!-- item 1  -->
+                                                 <div class="item active">       
+                                                      <span class="text-big">Working as one for <br/>the good of All</span><br>
+                                                      <!--<button class="btn btn-outline btn-xl">Learn More</button>-->
+                                                </div><!-- /end item 1  -->   
+                                                <!-- item 2  -->
+                                                <div class="item">       
+                                                      <span class="text-big">Several Successful <br/>On-going Projects</span><br>
+                                                      <!--<button class="btn btn-outline btn-xl">Volunteer with Us</button>-->
+                                                </div><!-- /end item 2  -->
+                                                <!-- item 3  -->
+                                                <div class="item">       
+                                                      <span class="text-big">Support a Sarvahitey <br/>Drive Today</span><br>
+                                                      <!--<button class="btn btn-outline btn-xl">Explore Initiatives</button>-->
+                                                </div><!-- /end item 3  --> 
+                                          </div></div><!-- /end carousel  -->
+                              </div><!-- /end carousel container-->
+                      </div>
+                  </div>
+               
+          </div></div>
+      </header>
+      </section><!--=== END intro ===-->  
+
+      <!--=== About Carousel ===-->
+       <section id="about" class="bg-brand-secondary-dark">
+          <div class="col-lg-12 inner-container text-center wow animated fadeInDown" data-wow-offset="10">
+              <h1>Who we are</h1>
+              <div class="accent-rule-short"></div>
+              <div class="vert-centered-wrapper-150px"><!-- height set in one-page-base.css -->
+                  <div class="vert-centered">
+                         <!-- carousel -->
+                          <div class="carousel slide carousel-fade" id="carousel_fade">
+                            <div class="carousel-inner">   
+                                 <!-- item 1  -->
+                                 <div class="item active">       
+                                      <h2><span class="emphasis">SARVAHITEY</span> is a cause based Non-Profit Organization striving to Preserve, Sustain and Refine the Society.</h2>
+                                </div><!-- /end item 1  -->   
+                                 <!-- item 2  -->
+                                <div class="item ">
+                                     <h2><span class="emphasis">SARVAHITEY</span> aims to address and solve the multitude of issues faced by the developing Indian society.</h2>
+                               </div><!-- /end item 2  --> 
+                               <!-- item 3  -->
+                               <div class="item ">
+                                     <h2>We are a movement of young people <span class="emphasis">realizing the onus</span> of empowering the marginalized of our community.</h2>
+                               </div> <!-- /end item 3  -->  
+                            </div><!-- /end carousel-inner  -->    
+                           <!-- controls -->
+                            <a class="left carousel-control carousel-control-wide" href="#carousel_fade" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control carousel-control-wide" href="#carousel_fade" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                          </div> <!-- /end carousel  -->    
+                      </div> <!-- /end vert centered inside wrapper -->    
+                   </div> <!-- /end vert centered and animation wrapper -->  
+                   <button class="btn btn-black btn-sm">
+            <a href="aboutus.html">Know More</a>
+            </button>
+               </div>
+          <div class="clearfix"></div>
+       </section><!--=== / END about  ===-->
+
+        <!--=== PROCESS ===--> 
+        <section id="process" class="bg-brand-warning-med">
+        <div class="">
+            <div class="col-md-15 bg-brand-warning">
+                <div class="responsive-hide">
+                    <div class="triangle-right wow animated-longer-delay-3 fadeIn"><span class="text-big"><i class="fa fa-leaf-right text-warning"></i></span></div>
+                </div>
+                <div class="col-lg-12 col-md-12 inner-container-small wow animated fadeIn" data-wow-offset="10">
+                    <div class="pull-left icon-circle-md">
+                        <button class="btn-circle btn-white"><i class="fa fa-book fa-2x"></i></button>
+                    </div>
+                    <div class="col-lg-9 col-md-9 banner-text">
+                        <h2>Vidya <br/>Vistar</h2>
+                        <p>For education is the prime and paramount prerequisite for a civilized and developed society.<br><br>
+						
+						<button class="btn btn-black btn-sm">
+						<a href="sample-campaign - vidya.html">Read More</a>
+						</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-15 bg-brand-warning-med">
+                <div class="responsive-hide">
+                    <div class="triangle-right wow animated-longer-delay-5 fadeIn"><span class="text-big"><i class="fa fa-book-right text-warning-darker"></i></span></div>
+                </div>
+                <div class="col-lg-12 col-md-12 inner-container-small wow animated-longer-delay-3 fadeIn" data-wow-offset="10">
+                    <div class="pull-left icon-circle-md">
+                        <button class="btn-circle btn-white"><i class="fa fa-trash-o fa-2x"></i></button>
+                    </div>
+                    <div class="col-lg-9 col-md-9 banner-text">
+                        <h2>Safai <br/>Abhiyaan</h2>
+                        <p>For, a clean mind, a clean body and a clean environment are the habitats of enlightened progress.<br><br>
+						<button class="btn btn-black btn-sm">
+						<a href="sample-campaign - safai.html">Read More</a>
+						</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-15 bg-brand-warning-darker">
+                <div class="col-lg-12 col-md-12 inner-container-small wow animated-longer-delay-5 fadeIn" data-wow-offset="10">
+                    <div class="pull-left icon-circle-md">
+                        <button class="btn-circle btn-white"><i class="fa fa-users fa-2x"></i></button>
+                    </div>
+                    <div class="col-lg-9 col-md-9 banner-text">
+                         <h2>Clothes <br/>Donation</h2>
+                        <p>For, a clothed body is a dignified body, and dignified lives breed dignified thoughts.<br><br>
+						<button class="btn btn-black btn-sm">
+						<a href="sample-campaign - clothes.html">Read More</a>
+						</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-15 bg-brand-warning-med">
+                <div class="col-lg-12 col-md-12 inner-container-small wow animated-longer-delay-5 fadeIn" data-wow-offset="10">
+                    <div class="pull-left icon-circle-md">
+                        <button class="btn-circle btn-white"><i class="fa fa-home fa-2x"></i></button>
+                    </div>
+                    <div class="col-lg-9 col-md-9 banner-text">
+                        <h2>Model <br/>Village</h2>
+                        <p>For, the stronger the roots, the tastier the fruits. And India’s roots are in its rural population.<br><br>
+            <button class="btn btn-black btn-sm">
+            <a href="sample-campaign - model.html">Read More</a>
+            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-15 bg-brand-warning">
+                <div class="col-lg-12 col-md-12 inner-container-small wow animated-longer-delay-5 fadeIn" data-wow-offset="10">
+                    <div class="pull-left icon-circle-md">
+                        <button class="btn-circle btn-white"><i class="fa fa-bookmark fa-2x"></i></button>
+                    </div>
+                    <div class="col-lg-9 col-md-9 banner-text">
+                        <h2>Ad hoc <br/>Projects</h2>
+                        <p>When opportunity arises, Sarvahitey mobilizes, plans and acts to resolve issues.<br><br>
+            <button class="btn btn-black btn-sm">
+            <a href="sample-campaign - onetime.html">Read More</a>
+            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="clearfix"></div>
+         </section><!--=== / END process  ===-->
+          
+         <!--=== NEWS & EVENTS ===-->
+         <section id="events">
+            	<div class="bg-white">
+                    <div class="inner-container overlay-light"><!-- used 'row-of-columns' anytime columns will eventually stack in resposive mode adds bottom margin to all inner columns when window less than 1200px   -->
+                       <!-- section header -->
+                           <div class="row text-center">
+                              <div class="col-lg-8 col-xs-12 col-lg-offset-2  wow animated fadeInDown">
+                                <h1 class="">Sarvahitey Bulletin</h1>
+                                <div class="accent-rule-short"></div>
+                                <h2>Be up-to-date on the News and Events happening at Sarvahitey. From Spreading Awareness to Charity Drives to Community Service, click here to know what’s going on, and sign up for your choice of Event/Project.</h2>
+                              </div>
+                           </div><!-- / end section header -->
+                           <!-- tabs -->
+                           <div class="wow animated-longer-delay-1 fadeIn">			
+                           <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                  <!--<li class="active large"><a href="#recent-news" role="tab" data-toggle="tab">News</a></li>-->
+                                  <li class="active large"><a href="#upcoming-events" role="tab" data-toggle="tab">Events and Activities</a></li>
+                                  <!--<li class="large"><a href="#new-volunteers" role="tab" data-toggle="tab">Volunteers</a></li>-->
+                                </ul>
+      						  <!-- Tab panes -->
+                                <div class="tab-content bg-white">
+                                      
+                                      <!-- tab pane 2 -->
+                                      <div class="tab-pane active" id="upcoming-events">
+                                        <!-- carousel -->
+                                            <div class="carousel slide carousel-fade" id="carousel_2">
+											 <!-- carousel inner -->
+                                              <div class="carousel-inner">   
+                                                   <!-- item 1  -->
+                                                   <div class="item active">       
+                                                        <div class="col-lg-12 row-of-columns">
+                                                            <div class="col-md-3 bg-brand-primary">
+                                                                <div class="event-date text-center ">
+                                                                    <h4 class="bold" >January</h4>
+                                                                    <h1>13</h1>   	
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                            	<span class="event-icon"><i class="fa fa-users fa-2x text-warning"></i></span>
+                                                                <h4>Project Kill the Chill II</h4>
+                                                                <br>
+                                                                <ul class="list-inline list-unstyled event-details list-vert-solid-line-left">
+                                                                    <li><i class="fa fa-clock-o"></i>&nbsp;&nbsp;09:00 PM </li>
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<a href="#mapModal" data-toggle="modal" role="button">Noida, Sector 18</a></li>
+                                                                    <li><a href="https://www.facebook.com/events/363433070679700/" target="blank">RSVP on Facebook</a> </li>
+                                                               	</ul>
+                                                            </div>
+															<div class="col-md-3 bg-brand-primary">
+                                                                <div class="event-date text-center ">
+                                                                    <h4 class="bold" >January</h4>
+                                                                    <h1>27</h1>   	
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                            	<span class="event-icon"><i class="fa fa-users fa-2x text-warning"></i></span>
+                                                                <h4>Project Kill the Chill II</h4>
+                                                                <br>
+                                                                <ul class="list-inline list-unstyled event-details list-vert-solid-line-left">
+                                                                    <li><i class="fa fa-clock-o"></i>&nbsp;&nbsp;09:00 PM </li>
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<a href="#mapModal" data-toggle="modal" role="button">Akshardham Metro Station</a></li>
+                                                                    <li><a href="https://www.facebook.com/events/363433070679700/" target="blank">RSVP on Facebook</a> </li>
+                                                               	</ul>
+                                                            </div>
+
+                                                        </div>
+                                                        
+                                                        
+                                                   </div> <!-- /end item 1  -->   
+                                                   
+                                                   <!-- item 2  -->
+                                                    <!-- /end item 2  -->
+													
+													<!-- item 3 -->
+													<div class="item"> 
+													
+													<div class="col-lg-12 row-of-columns">
+                                                            <div class="col-md-3 bg-brand-primary">
+                                                                <div class="event-date text-center ">
+                                                                    <h4 class="bold" >Tuesday and Thursday</h4>
+                                                                    <h1>Weekly</h1>   	
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                            	<span class="event-icon"><i class="fa fa-book fa-2x text-warning"></i></span>
+                                                                <h4>Regular educational Classes</h4>
+                                                                <br>
+                                                                <ul class="list-inline list-unstyled event-details list-vert-solid-line-left">
+                                                                    <li><i class="fa fa-clock-o"></i>&nbsp;&nbsp;11:00 AM </li>
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<a href="#mapModal" data-toggle="modal" role="button">Noida, Sector 50</a></li>
+                                                                    <li><a href="https://www.facebook.com/sarvahitey" target="blank">RSVP on Facebook</a> </li>
+                                                               	</ul>
+                                                            </div>
+															<div class="col-md-3 bg-brand-primary">
+                                                                <div class="event-date text-center ">
+                                                                    <h4 class="bold" >Saturday and Sunday</h4>
+                                                                    <h1>Weekly</h1>   	
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                            	<span class="event-icon"><i class="fa fa-book fa-2x text-warning"></i></span>
+                                                                <h4>Regular Educational Projects</h4>
+                                                                <br>
+                                                                <ul class="list-inline list-unstyled event-details list-vert-solid-line-left">
+                                                                    <li><i class="fa fa-clock-o"></i>&nbsp;&nbsp;10:00 AM </li>
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<a href="#mapModal" data-toggle="modal" role="button">Gole Market, Delhi</a></li>
+                                                                    <li><a href="https://www.facebook.com/sarvahitey" target="blank">RSVP on Facebook</a> </li>
+                                                               	</ul>
+                                                            </div>
+                                                        </div>
+													</div>
+													<!-- end of item 3 -->
+													<!-- item 4 
+													<div class="item"> 
+													<div class="col-lg-12 row-of-columns">
+                                                            
+                                                        </div>
+														</div>
+					
+													<!-- end of item 4 -->
+                                           
+                                              </div> <!-- /end carousel-inner  -->   
+				
+                                              <!-- controls -->
+											  <div>
+                                              <a class="left carousel-control" href="#carousel_2" role="button" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left text-secondary-lighter"></span>
+                                              </a>
+                                              <a class="right carousel-control" href="#carousel_2" role="button" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right text-secondary-lighter"></span>
+                                              </a>
+											  </div>
+											  
+                                              
+                                            </div> <!-- /end carousel  -->  
+										
+                                      </div><!-- / end tab pane 2 -->
+                                      <div class="clearfix"></div>
+                                </div> 
+                        </div><!-- / end tabs --> 
+						
+			<!--- Sample Donation Pop Up modal -->
+			
+			<div  id="donation" class="modal fade" >
+                <div class="modal-dialog modal-lg" ">
+                  <div class="modal-content" >
+                     <!--  <div class="modal-body modal-body-margin-top">
+   					  map -->
+                     
+                      <h4   class="donation-pop" style="text-align: center; border-radius: 4px 4px 0px 0px;">Donate for our cause</h4>
+					  <h3 style="text-align: center;">You can send us through</h3>
+                      <p style="text-align: center;"> Account number :<a href="tel:103705000397" style="color: black;"> 103705000397 </a>
+						<br>IFSC : ICIC0001037
+						<br>Branch : Vasant Kunj
+					<br>	Account name : Sarvahitey
+						<br>Bank : ICICI
+						<br>Our Paytm number: <a href="tel:+918800577497" style="color: black;"> +918800577497 </a>
+						</p>     
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div>
+			
+			
+			
+			<!--Donation modal end -->
+						
+              <!-- Sample Map Modal for Upcoming Events -->
+              <div class="modal fade" id="mapModal">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-body modal-body-margin-top">
+   					  <!-- map -->
+   					  <div id="map-modal-event"></div><!-- /end map -->
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><br>
+                      <h4 class="modal-title">F-56, sector 51</h4>
+                      <p>Noida, <br>
+                      UP 201301
+                      <br><br>
+                      <span class="text-primary"> <a href="javascript:void(0)">Map</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0)">Directions</a></span>
+                      <br><br>
+					  <span class="time-stamp">Hours: Mon–Fri: 10 AM–9 PM, Sat–Sun: 10 AM–5 PM</span>
+                      </p>                    
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+            </div></div>
+         </section><!--=== / END news & events  ===--> 
+        
+       <!--=== GALLERY ===-->
+        <section id="gallery">
+             <div class="col-lg-12 no-padding bg-white">
+                        <!-- Gallery-->
+                                <div id="effect-1" class="effects clearfix event-gallery">
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 bg-brand-tertiary wow animated fadeIn text-center"> 
+                                                <div class=" col-xs-12 float-over-top-center">
+                                                      <h1 class="text-uppercase">The Colours<br> of Sarvahitey
+                                                      <span class="responsive-hide">
+                                                      	<i class="fa fa-caret-right transparent-30"></i>
+                                                      </span>
+                                                      </h1>
+                                                </div>
+                                                <img src="img/gal-spacer.png" alt="gallery" class="img-responsive" > 
+                                           </div>
+                                           
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container effects-enlarge">
+                                                    <a href="img/educate_cover.jpg" title=""  data-gal="prettyPhoto[1]">
+                                                    	<img src="img/educate_cover.jpg" alt="Vidya Vistar"/>
+                                                       	 <div class="overlay">
+                                                            <span class="expand"><i class=" fa fa-chevron-right"></i></span>
+                                                            <div class="overlay-caption">
+                                                              <h3>Vidya Vistar</h3>
+                                                              <small>Of the world through the eyes of budding students.</small>
+                                                            </div>
+                                                         </div>
+                                                     </a>
+                                                     <!-- This is an example of a sub gallery -->
+													                                                 	 
+													<div class="hidden"><a href="img/educate_02.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_02.jpg"  alt="Vidya Vistar"></a></div>
+													<div class="hidden"><a href="img/educate_03.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_03.jpg"  alt="Vidya Vistar"></a></div>
+                          <div class="hidden"><a href="img/educate_04.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_04.jpg"  alt="Vidya Vistar"></a></div> 
+													<div class="hidden"><a href="img/educate_05.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_05.jpg"  alt="Vidya Vistar"></a></div>
+													<div class="hidden"><a href="img/educate_06.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_06.jpg"  alt="Vidya Vistar"></a></div>
+                          <div class="hidden"><a href="img/educate_08.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_08.jpg"  alt="Vidya Vistar"></a></div>                                                                
+                          <div class="hidden"><a href="img/educate_09.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_09.jpg"  alt="Vidya Vistar"></a></div>
+                          <div class="hidden"><a href="img/educate_10.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_10.jpg"  alt="Vidya Vistar"></a></div>
+                          <div class="hidden"><a href="img/educate_11.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_11.jpg"  alt="Vidya Vistar"></a></div> 
+                          <div class="hidden"><a href="img/educate_12.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_12.jpg"  alt="Vidya Vistar"></a></div>
+                          <div class="hidden"><a href="img/educate_13.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_13.jpg"  alt="Vidya Vistar"></a></div>
+                          <div class="hidden"><a href="img/educate_14.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_14.jpg"  alt="Vidya Vistar"></a></div> 
+                          <div class="hidden"><a href="img/educate_15.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_15.jpg"  alt="Vidya Vistar"></a></div>
+                          <div class="hidden"><a href="img/educate_16.jpg" data-gal="prettyPhoto[1]" title="<b></b>"><img src="img/educate_16.jpg"  alt="Vidya Vistar"></a></div>     													
+													<!-- / end sub gallery -->
+                                                </div>
+                                           </div>
+                                           
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container effects-enlarge">
+                                                    <a href="img/clean_cover.jpg" title=""  data-gal="prettyPhoto[2]">
+                                                    	<img src="img/clean_cover.jpg" alt="Safai Abhiyaan"/>
+                                                       	 <div class="overlay">
+                                                            <span class="expand"><i class=" fa fa-chevron-right"></i></span>
+                                                            <div class="overlay-caption">
+                                                              <h3>Safai Abhiyaan</h3>
+                                                              <small>Of a clearer vision in a cleaner world.</small>
+                                                            </div>
+                                                         </div>
+                                                     </a>
+                                                     <!-- This is an example of a sub gallery -->	
+													<div class="hidden"><a href="img/clean_01.jpg" data-gal="prettyPhoto[2]" title="<b></b>"><img src="img/clean_01.jpg"  alt="Safai Abhiyaan"></a></div> 
+													<div class="hidden"><a href="img/clean_02.jpg" data-gal="prettyPhoto[2]" title="<b></b>"><img src="img/clean_02.jpg"  alt="Safai Abhiyaan"></a></div>
+													<div class="hidden"><a href="img/clean_03.jpg" data-gal="prettyPhoto[2]" title="<b></b>"><img src="img/clean_03.jpg"  alt="Safai Abhiyaan"></a></div>
+                          <div class="hidden"><a href="img/clean_04.jpg" data-gal="prettyPhoto[2]" title="<b></b>"><img src="img/clean_04.jpg"  alt="Safai Abhiyaan"></a></div> 
+													<div class="hidden"><a href="img/clean_05.jpg" data-gal="prettyPhoto[2]" title="<b></b>"><img src="img/clean_05.jpg"  alt="Safai Abhiyaan"></a></div>
+													<div class="hidden"><a href="img/clean_06.jpg" data-gal="prettyPhoto[2]" title="<b></b>"><img src="img/clean_06.jpg"  alt="Safai Abhiyaan"></a></div>	
+												
+													<!-- / end sub gallery -->
+                                                </div>
+                                           </div>
+										   
+
+                                          
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container effects-enlarge">
+                                                    <a href="img/clothes_cover.jpg" title=""  data-gal="prettyPhoto[3]">
+                                                    	<img src="img/clothes_cover.jpg" alt="Clothes Donation" />
+                                                       	 <div class="overlay">
+                                                            <span class="expand"><i class=" fa fa-chevron-right"></i></span>
+                                                            <div class="overlay-caption">
+                                                              <h3>Clothes Donation</h3>
+                                                              <small>Of a million hues of threads and stitches.</small>
+                                                            </div>
+                                                         </div>
+                                                     </a>
+													<!-- This is an example of a sub gallery -->
+                            <div class="hidden"><a href="img/donate_01.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_01.jpg"  alt="Clothes Donation"></a></div> 
+												    <div class="hidden"><a href="img/donate_02.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_02.jpg"  alt="Clothes Donation"></a></div>
+												    <div class="hidden"><a href="img/donate_05.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_05.jpg"  alt="Clothes Donation"></a></div>
+                            <div class="hidden"><a href="img/donate_06.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_06.jpg"  alt="Clothes Donation"></a></div> 
+												    <div class="hidden"><a href="img/donate_07.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_07.jpg"  alt="Clothes Donation"></a></div>
+												    <div class="hidden"><a href="img/donate_08.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_08.jpg"  alt="Clothes Donation"></a></div>													
+													  <div class="hidden"><a href="img/donate_09.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_09.jpg"  alt="Clothes Donation"></a></div>
+                            <div class="hidden"><a href="img/donate_10.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_10.jpg"  alt="Clothes Donation"></a></div> 
+												    <div class="hidden"><a href="img/donate_11.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_11.jpg"  alt="Clothes Donation"></a></div>
+												    <div class="hidden"><a href="img/donate_12.jpg" data-gal="prettyPhoto[3]" title=""><img src="img/donate_12.jpg"  alt="Clothes Donation"></a></div>
+													<!-- / end sub gallery -->
+                                                </div>
+                                           </div>
+                                                                                     
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container effects-enlarge">
+                                                    <a href="img/model_cover.jpg" title=""  data-gal="prettyPhoto[4]">
+                                                    	<img src="img/model_cover.jpg" alt="Model Village" />
+                                                       	 <div class="overlay">
+                                                            <span class="expand"><i class=" fa fa-chevron-right"></i></span>
+                                                            <div class="overlay-caption">
+                                                              <h3>Model Village</h3>
+                                                              <small>Of glimpses of civilization amongst urbanisation.</small>
+                                                            </div>
+                                                         </div>
+                                                     </a>
+													<!-- This is an example of a sub gallery -->
+                          <div class="hidden"><a href="img/model_1.jpg" data-gal="prettyPhoto[4]"><img src="img/model_1.jpg"  alt="Model Village"></a></div>
+													<div class="hidden"><a href="img/model_2.jpg" data-gal="prettyPhoto[4]"><img src="img/model_2.jpg"  alt="Model Village"></a></div>
+													<div class="hidden"><a href="img/model_3.jpg" data-gal="prettyPhoto[4]"><img src="img/model_3.jpg"  alt="Model Village"></a></div>
+													<div class="hidden"><a href="img/model_4.jpg" data-gal="prettyPhoto[4]"><img src="img/model_4.jpg"  alt="Model Village"></a></div>
+													<!--<div class="hidden"><a href="img/slum_5.jpg" data-gal="prettyPhoto[4]"><img src="img/model_5.jpg"  alt="Model Village"></a></div>													
+                          <div class="hidden"><a href="img/slum_6.jpg" data-gal="prettyPhoto[4]"><img src="img/model_6.jpg"  alt="Model Village"></a></div> 
+													<div class="hidden"><a href="img/slum_7.jpg" data-gal="prettyPhoto[4]"><img src="img/model_7.jpg"  alt="Model Village"></a></div>
+													<div class="hidden"><a href="img/slum_8.jpg" data-gal="prettyPhoto[4]"><img src="img/model_8.jpg"  alt="Model Village"></a></div>
+													<div class="hidden"><a href="img/slum_9.jpg" data-gal="prettyPhoto[4]"><img src="img/model_9.jpg"  alt="Model Village"></a></div>
+													<div class="hidden"><a href="img/slum_10.jpg" data-gal="prettyPhoto[4]"><img src="img/model_10.jpg"  alt="Model Village"></a></div>				-->									
+													<!-- / end sub gallery -->
+                                                </div>
+                                           </div>
+										   
+										   
+                                           <div class="img col-lg-4 col-sm-6 col-xs-12 tn wow animated-longer-delay-2 fadeIn">
+                                                <div class="gallery effects-container effects-enlarge">
+												<a href="img/novel_1.jpg" title=""  data-gal="prettyPhoto[5]">
+                                                    	<img src="img/novel_1.jpg" alt="Ad hoc Projects" />
+                                                       	 <div class="overlay">
+                                                            <span class="expand"><i class=" fa fa-chevron-right"></i></span>
+                                                            <div class="overlay-caption">
+                                                              <h3>Ad hoc Projects</h3>
+                                                              <small>Of random images of extempore efforts.</small>
+                                                            </div>
+                                                         </div>
+                                                     </a>
+													<!-- This is an example of a sub gallery -->
+                          <div class="hidden"><a href="img/novel_2.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_2.jpg"  alt="Ad hoc Projects"></a></div> 
+													<div class="hidden"><a href="img/novel_4.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_4.jpg"  alt="Ad hoc Projects"></a></div>
+													<div class="hidden"><a href="img/novel_5.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_5.jpg"  alt="Ad hoc Projects"></a></div>
+													<div class="hidden"><a href="img/novel_6.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_6.jpg"  alt="Ad hoc Projects"></a></div>
+													<div class="hidden"><a href="img/novel_7.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_7.jpg"  alt="Ad hoc Projects"></a></div>	
+                          <div class="hidden"><a href="img/novel_8.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_8.jpg"  alt="Ad hoc Projects"></a></div> 
+                          <div class="hidden"><a href="img/novel_9.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_9.jpg"  alt="Ad hoc Projects"></a></div>
+                          <div class="hidden"><a href="img/novel_10.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_10.jpg"  alt="Ad hoc Projects"></a></div>
+                          <div class="hidden"><a href="img/novel_11.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_11.jpg"  alt="Ad hoc Projects"></a></div>
+                          <div class="hidden"><a href="img/novel_12.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_12.jpg"  alt="Ad hoc Projects"></a></div> 
+                          <div class="hidden"><a href="img/novel_13.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_13.jpg"  alt="Ad hoc Projects"></a></div> 
+                          <div class="hidden"><a href="img/novel_14.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_14.jpg"  alt="Ad hoc Projects"></a></div>
+                          <div class="hidden"><a href="img/novel_15.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_15.jpg"  alt="Ad hoc Projects"></a></div>
+                          <div class="hidden"><a href="img/novel_16.jpg" data-gal="prettyPhoto[5]"><img src="img/novel_16.jpg"  alt="Ad hoc Projects"></a></div>												
+													<!-- / end sub gallery -->
+                                                </div>
+                                           </div>
+                                  </div><!-- end hover effects wrapper-->
+                    </div><!-- / end inner container -->  
+            <div class="clearfix"></div>
+       </section><!--=== / END gallery  ===-->         
+       
+       <!--=== GET INVOLVED ===-->
+       <section id="join" class="bg-white">
+          <div class="inner-container">
+              <!-- section header -->
+              <div class="row text-center">
+                  <div class="col-lg-8 col-xs-12 col-lg-offset-2  wow animated fadeInDown">
+                      <h1 class="">Make an Impact</h1>
+                      <div class="accent-rule-short"></div>
+                      <h2>Interested in connecting with Sarvahitey? We'd love to hear from you! Check out the number of ways to get involved.</h2>
+                      <h4>Are you a leader who shares our passion for social change? If you're up to the challenge, submit your credentials below.</h4>
+
+                      <button class="btn btn-black btn-sm">
+                      <a href="https://sarvahitey.typeform.com/to/KDq8xP">Tell us your interests</a>
+                      </button>
+                  </div>
+              </div><!-- / end section header -->
+
+              <!--<div class="row row-after-a-row row-of-columns">
+                  <div class="col-lg-4 col-sm-6 text-center  wow animated-longer-delay-1 fadeIn">
+                      <button class="btn  btn-white text-big" data-toggle="modal" data-target="#joinModal1"><i class="text-primary fa fa-send"></i></button>
+                      <h3>Donate</h3>
+                      <p>Willing to invest time/money/resource in bringing a change. Contact us through the form below</p>
+                      <!--<button class="btn btn-black btn-sm" data-toggle="modal" data-target="#joinModal1">Contact us</button>-->
+                  <!--</div>
+                  <div class="col-lg-4 col-sm-6 text-center  wow animated-longer-delay-4 fadeIn">
+                      <button class="btn btn-white text-big text-primary" data-toggle="modal" data-target="#joinModal2"><i class="fa fa-graduation-cap"></i></button>
+                      <h3>Be an Ambassador</h3>
+                      <p>Do you want to spearhead initiatives that inspire mass change? Click below to apply to become an ambassador.</p>
+                      <!--<button class="btn btn-black btn-sm" data-toggle="modal" data-target="#joinModal2">Apply Now</button>-->
+                  <!--</div>
+
+                  <div class="col-lg-4 col-sm-6 text-center  wow animated-longer-delay-6 fadeIn">
+                      <button class="btn btn-white text-big text-primary" data-toggle="modal" data-target="#joinModal4"><i class="fa fa-globe"></i></button>
+                      <h3>Volunteer with Us</h3>
+                      <p>Are you a leader who shares our passion for social change? If your up to the challenge, submit your creds below.</p>
+                      <button class="btn btn-black btn-sm">
+                      <a href="https://sarvahitey.typeform.com/to/KDq8xP">Tell us your interests</a>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          
+ 
+         <div class="clearfix"></div>
+     </section><!--=== / END get involved   ===-->
+       
+   	  <!--=== CONTACT ===-->
+      <section id="contact">
+            <div class="row">
+                <div class="span4 collapse-group">
+                  <div id="viewdetails" class="bg-brand-tertiary collapse">
+                    <div class="inner-container animated fadeIn">
+                          <div class="col-lg-12"><h2>Contact Us</h2></div>
+                          <div class="col-lg-8">
+                           <!-- contact form -->    
+                           <div class="col-lg-12 no-padding">
+                           		<div class="col-lg-8 no-padding"><p id="contactResponse"></p></div>
+                           </div>
+                              <form method="post" id="contactform" class="contactform" action="mailto:sarvahitey@gmail.com">
+                                  <div class="form-group">
+                                      <div class="controls">
+                                          <label class="control-label">Name <span class="transparent-50">*</span></label>
+                                          <input type="text" id="name" name="name" class="field text form-control" placeholder="Name">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <div class="controls">
+                                          <label class="control-label">Email <span class="transparent-50">*</span></label>
+                                          <input type="text" id="email" name="email" class="field text form-control" placeholder="Email">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group ">
+                                      <div class="controls">
+                                          <label class="control-label">Subject <span class="transparent-50">*</span></label>
+                                          <input type="text" id="subject" name="subject" class="field textbig form-control" placeholder="Subject">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group ">
+                                      <div class="controls">
+                                          <label class="control-label">Message <span class="transparent-50">*</span></label>
+                                          <textarea id="comments" name="comments" class="field form-control" rows="5" placeholder="Enter your message here..."></textarea>
+
+                                      </div>
+                                  </div>
+
+                                  <div class="controls">
+                                      <button type="button" onclick="submitContactForm()" value="send message" id="submitbtn" class="btn btn-black btn-lg btn-rounded-edge">Send Message</button>
+
+                                  </div>
+                              </form>
+                          </div><!-- /end contact form -->   
+                          <div class="col-lg-4 col-sm-12 col-right-responsive-fix">
+                         	<h3>We want to hear from you</h3>
+                            <p>We view ourselves as relational. If you prefer to talk to a person, please pick up the phone and give us a call.<br>
+                            <b>Keshav Datta</b> : +91 9871 919591<br>
+                            <b>Prem Prakash</b> : +91 8285 423423
+                            </p>
+                            <h3>Have any questions?</h3>
+
+                            <p>Please mention the queries/questions in the message box. We will get back to you with either a call or a mail</p>
+                            <br>
+                            <!--<h3>Stay up to Date</h3>
+                            <p>Keep informed by signing up for email updates. We promise we won't send you any junk mail.  </p>-->
+                            <div class="col-lg-9 col-sm-5 no-padding">
+                                <!--<form class="footer-subsribe">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Email Address">                            
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button">Subscribe</button>-->
+                                        </span>
+                                    </div>                  
+                                </form>  
+                            </div>
+                         </div>
+                        <div class="clearfix"></div> 
+                    </div>
+                  </div>
+                </div><!-- / end collapse-group -->
+            </div><!-- / end row -->
+            <div class="bg-brand-tertiary thin-strip">&nbsp;</div>
+            <div class="wrapper-relative bg-white">
+               <!-- map // map corrdinates line 90 of act.js text near line 207 of act.js -->
+               <div id="map" class="wow animated-longer-delay-4"> </div><!-- / end map -->
+               <!-- contact toggle -->
+               <div class="float-over-top">
+                        <div id="contact-toggle" class="tab-down tab-down-tertiary"><a class="" data-toggle="collapse" data-target="#viewdetails"><h3>Send us a message <i class="fa fa-chevron-down"></i></h3></a></div>
+               </div><!--/ end contact toggle -->
+ 
+            </div>
+      </section> <!--=== / END contact ===-->
+      
+      <!--=== FOOTER ===-->
+	<!--
+      <section id="footer">
+			 <!-- Row 2 -->
+              <div class="row footer-bottom">
+                  <div class="inner-container-small wow animated fadeIn">
+                      <div class="col-lg-3 col-sm-12 left"><p><small class="transparent-50">© 2015 sarvahitey. All Rights Reserved.</small></p></div>
+                      <div class="col-lg-3 col-sm-12 pull-right">
+                           <div class="list-social transparent-50 pull-right">
+                                <ul class="list-inline">
+                                    <li><a href="https://www.facebook.com/sarvahitey" target="blank"><i class="fa fa-facebook transparent"></i></a></li>
+                                    <!--<li><a href="javascript:void(0)"><i class="fa fa-twitter transparent"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-dribbble transparent"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-tumblr transparent"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fa fa-flickr transparent"></i></a></li>-->
+                                </ul>
+                            </div>
+                      </div>
+                  </div>
+              </div><!-- / end Row 2 -->
+        </section><!--=== END Footer ===-->       
+   
+        <!-- Core JavaScript Files -->
+		<script src="js/jquery-1.11.0.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="dist/js/bootstrap.min.js"></script>
+	    <!-- Plugins -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8MmLs7Eu4dArNsgp_ktuqxwJg-sxnWdc"></script>
+		<script src="js/modernizr.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+		<script src="plugins/WOW-master/dist/wow.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+		<script src="plugins/prettyPhoto_uncompressed_3.1.5/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="plugins/tinyscrollbar-master/lib/jquery.tinyscrollbar.js"></script>
+        <script type="text/javascript" src="plugins/jquery-countTo-master/jquery.countTo.js"></script>
+        <!-- these next three are for the date picker in the the 'schedule an event' modal window -->
+		<script type="text/javascript" src="js/moment.js"></script>
+		<script src="plugins/bootstrap-datetimepicker-master/src/js/locales/bootstrap-datetimepicker.en-au.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/bootstrap-datetimepicker-master/src/js/bootstrap-datetimepicker.js" type="text/javascript" charset="utf-8"></script>
+	    <!-- Custom Theme JavaScript -->
+        <script src="js/act.js"></script>
+
+	
+
+	
+	</body>
+</html>
